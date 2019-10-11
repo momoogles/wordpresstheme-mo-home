@@ -6,9 +6,106 @@ Author: Mo
 Version: 1.0.0
 */
 
-.imagedummy {
-  background-color: aqua;
+/* default ------------------------ */
+body a {
+  color: white;
 }
-.text {
-  background-color: bisque;
+body a:hover {
+  color: white;
+  text-decoration: none;
 }
+body li {
+  text-decoration: none;
+  list-style: none;
+}
+/* -------------------------------- */
+
+/* animation ---------------------- */
+@keyframes hop {
+  30% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: none;
+  }
+}
+/* -------------------------------- */
+
+/* header ------------------------- */
+.header-inner {
+  height: 10vh;
+}
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 1;
+  transition: all .4s
+}
+.load.isLoaded {
+  opacity: 0;
+}
+
+.load .title {
+  font-size: 32px;
+  color: black;
+  transition: all .4s;
+  margin: 8px;
+}
+.load .title.isActive:nth-child(1)  {
+  animation: hop .3s;
+}
+.load .title.isActive:nth-child(2)  {
+  animation: hop .3s;
+  animation-delay: .3s;
+}
+/* -------------------------------- */
+
+/* top----------------------------- */
+.top-inner {
+  height: 80vh;
+}
+.top-background {
+  background: repeating-linear-gradient(
+      -45deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4) 80px,
+      rgba(0, 0, 0, 0.5) 80px,
+      rgba(0, 0, 0, 0.5) 160px
+    ),
+    url(./images/home_image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* -------------------------------- */
+
+/* mobile ------------------------- */
+@media(max-width: 480px)  {
+  .top-background {
+    background: repeating-linear-gradient(
+        -45deg,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4) 80px,
+        rgba(0, 0, 0, 0.5) 80px,
+        rgba(0, 0, 0, 0.5) 160px
+      ),
+      url(./images/home_image2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+/* -------------------------------- */
