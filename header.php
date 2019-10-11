@@ -16,15 +16,15 @@
   </div>
   <header>
     <div class="header-inner">
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="name col-md-3">
+          <div class="logo col-md-3">
             <a href="index.html">Mo's Home</a>
           </div>
           <div id="header-nav-wrap" class="header-nav-wrap col-md-9">
             <?php wp_nav_menu(array(
               'theme_location' => 'header-nav',
-              'menu_class' => 'row menu',
+              'menu_class' => 'row d-flex menu',
               'container' => 'nav',
               'container_class' => 'nav',
               'container_id' => 'header-nav',
@@ -43,8 +43,11 @@
     document.querySelectorAll(".load .title").forEach(element => element.classList.add("isActive"))
   }, 200);
   setTimeout(() => {
+    document.querySelector(".load").classList.add("isActive")
+  }, 1000)
+  setTimeout(() => {
     document.querySelector(".load").classList.add("isLoaded")
-  }, 1000);
+  }, 1400);
 </script>
 
 </html>
