@@ -7,7 +7,7 @@
       <div class="container-fluid">
         <h1 class="title">NEW SCHOOL LIFE</h1>
         <p class="text">
-          ここは　も　の大学生活４年間での活動を記録するサイトです。<br />自己作成のソースコードやイラスト、思い出の写真などをアップロードしていきます。
+          ここは　も　の大学生活４年間での活動を記録するサイトです。
         </p>
         <div class="link-btn"><a href="about">MY PROFILE!</a></div>
         </p>

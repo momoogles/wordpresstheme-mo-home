@@ -10,13 +10,13 @@
   <div class="header-inner">
     <div class="container-fluid">
       <div class="row">
-        <div class="logo-wrap col-md-3 col-sm-12 col-xs-12">
+        <div class="logo-wrap col-md-4 col-sm-12 col-xs-12">
           <a class="logo" href="index.php/home">Mo's Home</a>
         </div>
         <div class="nav-btn-wrap">
           <button class="nav-btn"><img src="<?php bloginfo('template_url'); ?>/images/icon_web_link.svg" width="40px" /></button>
         </div>
-        <div class="nav-wrap col-md-9">
+        <div class="nav-wrap col-md-8">
           <?php wp_nav_menu(array(
             'theme_location' => 'header-nav',
             'menu_class' => 'row menu',
