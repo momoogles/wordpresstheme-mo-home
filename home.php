@@ -1,9 +1,9 @@
 <?php get_header("head") ?>
 
-<div id="idnex">
+<div id="home">
   <?php get_header() ?>
-  <main class="index-inner">
-    Hello world!
+  <main class="home-inner">
+    Hello home!
   </main>
   <?php get_footer() ?>
 </div>
