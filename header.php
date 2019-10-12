@@ -19,7 +19,7 @@
         <div class="nav-wrap col-md-9">
           <?php wp_nav_menu(array(
             'theme_location' => 'header-nav',
-            'menu_class' => 'row d-flex menu',
+            'menu_class' => 'row menu',
             'container' => 'nav',
             'container_class' => 'nav',
             'container_id' => 'header-nav',
