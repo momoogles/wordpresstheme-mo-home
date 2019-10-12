@@ -14,7 +14,7 @@
           <a class="logo" href="index.php/home">Mo's Home</a>
         </div>
         <div class="nav-btn-wrap">
-          <button class="nav-btn">btn</button>
+          <button class="nav-btn"><img src="<?php bloginfo('template_url'); ?>/images/icon_web_link.svg" width="40px" /></button>
         </div>
         <div class="nav-wrap col-md-9">
           <?php wp_nav_menu(array(

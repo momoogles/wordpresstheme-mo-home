@@ -1,6 +1,6 @@
 <footer id="footer" class="footer">
   <div class="footer-inner">
-    <div class="container">
+    <div class="container-fluid">
       <?php if (!(is_front_page())) : ?>
         <div class="link row">
           <div class="nav-wrap col-sm-4 col-xs-12">

@@ -156,7 +156,7 @@ Version: 1.0.0
 }
 #top .title {
   /* bx */
-    argin: 0 100px 0;
+    margin: 0 100px 0;
   /* tx */
     color: white;
     font-size: 80px;
@@ -242,9 +242,18 @@ Version: 1.0.0
   /* header */ 
   #header .nav-btn-wrap  {
     /* dy */
+    justify-content: center;
     display: flex;
-    justify-content: end;
     align-items: center;
+    /* bx */
+    background-color: white;
+    border-radius: 50%
+  }
+  #header .nav-btn {
+    /* bx */
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
   }
   #header .nav-wrap {
     /* dy */
